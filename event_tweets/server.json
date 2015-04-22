@@ -1,0 +1,17 @@
+{
+    "remote": {
+        "database": {
+            "password": "", 
+            "name": "event_tweets", 
+            "user": "event_tweets"
+        }, 
+        "server": {
+            "ip": ""
+        }
+    }, 
+    "local": {
+        "database": {
+            "name": "event_tweets"
+        }
+    }
+}
