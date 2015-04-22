@@ -22,6 +22,7 @@ Account Group
 Account
 ~~~~~~~
 
+* Event
 * Twitter username
 * Group(s)
 
@@ -33,5 +34,19 @@ Term Group
 Term
 ~~~~
 
+* Event
 * String
 * Group(s)
+
+Tweet
+~~~~~
+
+* Event
+* Content
+* Account
+
+Term Match
+~~~~~~~~~~
+
+* Tweet
+* Term
