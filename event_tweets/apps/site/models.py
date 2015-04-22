@@ -14,6 +14,9 @@ class Event(models.Model):
         null=True,
     )
 
+    def __unicode__(self):
+        return self.label
+
     class Meta:
         ordering = ['label']
 
@@ -23,6 +26,9 @@ class AccountGroup(models.Model):
     label = models.CharField(
         max_length=100,
     )
+
+    def __unicode__(self):
+        return self.label
 
     class Meta:
         ordering = ['label']
@@ -43,6 +49,9 @@ class Account(models.Model):
         blank=True,
     )
 
+    def __unicode__(self):
+        return self.username
+
     class Meta:
         ordering = ['username']
 
@@ -52,6 +61,9 @@ class TermGroup(models.Model):
     label = models.CharField(
         max_length=100,
     )
+
+    def __unicode__(self):
+        return self.label
 
     class Meta:
         ordering = ['label']
@@ -72,6 +84,9 @@ class Term(models.Model):
         blank=True,
     )
 
+    def __unicode__(self):
+        return self.string
+
     class Meta:
         ordering = ['string']
 
@@ -89,6 +104,9 @@ class Tweet(models.Model):
     account = models.ForeignKey(
         Account,
     )
+
+    def __unicode__(self):
+        return self.link
 
 
 class TermMatch(models.Model):
