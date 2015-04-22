@@ -49,6 +49,16 @@ class Account(models.Model):
         blank=True,
     )
 
+    min_id_checked = models.IntegerField(
+        blank=True,
+        null=True,
+    )
+
+    max_id_checked = models.IntegerField(
+        blank=True,
+        null=True,
+    )
+
     def __unicode__(self):
         return self.username
 
