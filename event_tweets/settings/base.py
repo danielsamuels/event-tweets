@@ -18,7 +18,7 @@ import sys
 
 SITE_NAME = "Example"
 
-SITE_DOMAIN = "example.com"
+SITE_DOMAIN = "eventtweets.com"
 
 PREPEND_WWW = True
 
@@ -131,14 +131,9 @@ INSTALLED_APPS = (
     "cms",
 
     "reversion",
-    # "usertools",
-    # "historylinks",
     "watson",
 
-    "cms.apps.pages",
-    "cms.apps.links",
     "cms.apps.media",
-    "cms.apps.news",
 
     "event_tweets.apps.site",
 
